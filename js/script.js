@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function draw() {
 //Ellips
-  let canvas = document.getElementById('header__bg');
+  let canvas = document.getElementById('banner__bg');
   if (canvas.getContext) {
     let ctx = canvas.getContext("2d");
     let lingrad = ctx.createLinearGradient(0,630,830,100);

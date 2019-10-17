@@ -15,28 +15,11 @@
 	<header class="header">
 		<div class="container header__top">
 			<button class="header__menu-button" aria-label="Меню"></button>
-			<!--Форма обратной связи-->
-			<div class="form__container form__container--callback">
-				<button class="form__close"></button>
-				<form class="callback">
-					<h3 class="h h--3">Заказать звонок</h3>
-					<label class="form__label">
-						<span class="form__name">Ваше имя</span>
-						<input class="form__input" type="text" name="Имя" placeholder="Введите Ваше имя">
-					</label>
-					<label class="form__label">
-							<span class="form__name">Телефон</span>
-							<input class="form__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
-					</label>
-					<input type="submit" class="form__submit" value="Заказать звонок">
-				</form>
-			</div>
-
 			<nav>
 				<ul class="header__menu menu">
-					<li class="menu__item"><a href="#services">Услуги</a></li>
-					<li class="menu__item"><a href="#portfolio">Портфолио</a></li>
-					<li class="menu__item"><a href="#price">Стоимость</a></li>
+					<li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
+					<li class="menu__item"><a class="menu__link" href="#portfolio">Портфолио</a></li>
+					<li class="menu__item"><a class="menu__link" href="#price">Стоимость</a></li>
 				</ul>
 			</nav>
 			<div class="header__contacts">
@@ -44,9 +27,10 @@
 				<button class="header__form form-button" aria-label="Заказать звонок">Заказать звонок</button>
 			</div>
 		</div>
-		
+	</header>
+
 <!--Главный баннер-->
-		<div class="header__banner">
+		<section class="banner">
 			<div class="elements">
 				<span class="elements__item elements__item-brace">{ }</span>
 				<span class="elements__item elements__item-id">#</span>
@@ -55,17 +39,18 @@
 				<span class="elements__item elements__item-div">&lt;div&gt;</span>
 				<span class="elements__item elements__item-div2">&lt;div&gt;</span>
 			</div>
-			<div class="header__banner-info container">
+			<div class="banner__wrapper container">
+			<div class="banner-info">
 				<h1 class="h h--1">Дмитрий&nbsp;Алексеев</h1>
-				<p class="header__text">Frontend-разработчик и веб-верстальщик</p>
-				<a class="info-link header__services" href="#services">Узнать больше</a>
+				<p class="banner__text">Frontend-разработчик и веб-верстальщик</p>
+				<a class="info-link banner__services" href="#services">Узнать больше</a>
 			</div>
-			<div class="header__picture">
-				<img class="header__image" src="images/man.png" alt="Фотография человека">
-				<canvas id="header__bg"  width="814" height="630"></canvas>
+			<div class="banner__picture">
+				<img class="banner__image" src="images/man.png" alt="Фотография человека">
+				<canvas id="banner__bg"  width="920" height="763"></canvas>
 			</div>
 		</div>
-	</header>
+		</section>
 
 	<main class="main">
 <!--Что я делаю-->
@@ -98,8 +83,8 @@
 								</div>
 						</div>
 						<!-- Кнопки -->
-						<div class="swiper-button-prev swiper__button"></div>
-						<div class="swiper-button-next swiper__button swiper__button--right"></div>
+						<div class="swiper-button-prev swiper__button"><button class="slider__button" aria-label="Предыдущий слайд"></button></div>
+						<div class="swiper-button-next swiper__button"><button class="slider__button slider__button--right" aria-label="Следующий слайд"></button></div>
 						<div class="swiper-pagination"></div>
 				</div>
 				<a class="main__price" href="#price">Узнать стоимость</a>
@@ -125,9 +110,9 @@
 	<footer>
 		<div class="container footer">
 			<ul class="footer__menu menu">
-				<li class="menu__item menu__item--column"><a href="#services">Услуги</a></li>
-				<li class="menu__item menu__item--column"><a href="#portfolio">Портфолио</a></li>
-				<li class="menu__item menu__item--column"><a href="#price">Стоимость</a></li>
+				<li class="menu__item menu__item--column"><a class="menu__link" href="#services">Услуги</a></li>
+				<li class="menu__item menu__item--column"><a class="menu__link" href="#portfolio">Портфолио</a></li>
+				<li class="menu__item menu__item--column"><a class="menu__link" href="#price">Стоимость</a></li>
 			</ul>
 			<ul class="footer__contacts contacts">
 				<li class="contacts__items"><a class="contacts__link" href="tel:+7499-995-77-55"><i class="icon-phone contacts__icon"></i>+7 (499) 995-77-55</a></li>
@@ -162,5 +147,22 @@
   <script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
+<!--Форма обратной связи-->
+<section class="form__container form__container--callback">
+	<button class="form__close"></button>
+	<form method="POST" action="mail.php" class="callback">
+		<h3 class="h h--3">Заказать звонок</h3>
+		<label class="form__label">
+			<span class="form__name">Ваше имя</span>
+			<input class="form__input" type="text" name="Имя" placeholder="Введите Ваше имя">
+		</label>
+		<label class="form__label">
+				<span class="form__name">Телефон</span>
+				<input class="form__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+		</label>
+		<input type="submit" class="form__submit" value="Заказать звонок">
+	</form>
+</section>
 </html>
 
