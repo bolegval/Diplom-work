@@ -554,7 +554,8 @@
 		padding: 40px 30px;
 		text-align: center;
 		top: 20%;
-		left: 10%;
+		left: 50%;
+		margin-left: -125px;
 		z-index: 10;
 	}
 

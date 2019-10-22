@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", function draw() {
 });
 
   $('.form-button').click(function() {
-    $('.form__container--callback').show();
+    $('.form__container--callback').fadeIn();
   });
 
   $('.form__close').click(function() {
-    $('.form__container--callback').hide();
+    $('.form__container--callback').fadeOut();
   });
 
   $('.header__menu-button').click(function(){
@@ -74,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function draw() {
       },
         focusInvalid: false,
           rules: {
-        Телефон: {
+        phone: {
           required: true,
         },
-        Имя: {
+        name: {
           required: true,
           minlength: 3,
         },
