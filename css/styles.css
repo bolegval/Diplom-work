@@ -274,6 +274,7 @@ ul {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	height: 100%;
 }
 
 #banner__bg {
@@ -1050,11 +1051,15 @@ ul {
 		top: 12%;
 	}
 
+	.banner__picture {
+		height: auto;
+	}
+
 	.banner__image {
 		width: 243px;
     height: 330px;
     position: relative;
-    left: 21%;
+		left: 21%;
 	}
 
 	#banner__bg {
