@@ -274,7 +274,6 @@ ul {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	height: 100%;
 }
 
 #banner__bg {
@@ -1020,7 +1019,6 @@ ul {
 	}
 
 	.banner {
-		height: calc(100vh - 78px);
 		display: flex; 
 		flex-direction: column; 
 		justify-content: center;
