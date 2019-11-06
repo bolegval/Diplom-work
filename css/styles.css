@@ -285,6 +285,7 @@ ul {
 }
 
 .banner__image {
+	display: block;
 	-o-object-fit: contain;
 	   object-fit: contain;
 }
@@ -769,6 +770,10 @@ ul {
     left: 90%;
 	}
 
+	.banner__picture {
+		height: auto;
+	}
+
 	.main__services {
 		-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
@@ -1076,7 +1081,6 @@ ul {
 	.banner__image {
 		width: 243px;
 		height: 330px;
-		display: block;
 	}
 
 	.banner-info {
