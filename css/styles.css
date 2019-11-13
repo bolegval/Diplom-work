@@ -273,7 +273,6 @@ ul {
 }
 
 .banner__picture {
-	height: 100%;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -288,9 +287,7 @@ ul {
 
 .banner__image {
 	display: block;
-	height: 100%;
-	-o-object-fit: contain;
-		 object-fit: contain;
+	height: 430px;
 }
 
 #banner__bg {
