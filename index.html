@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/min.css">
 </head>
 <body>
 <!--Хэдер-->
 	<header class="header">
 		<div class="container header__top">
 			<button class="header__menu-button" aria-label="Меню"></button>
-			<nav>
+			<nav class="header__navigation">
 				<ul class="header__menu menu">
 					<li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
 					<li class="menu__item"><a class="menu__link" href="#portfolio">Портфолио</a></li>
@@ -164,18 +164,16 @@
 
 //Slider
   var mySwiper = new Swiper ('.swiper-container', {
-// Optional parameters
+
     loop: true,
     slidesPerView: 1,
     spaceBetween: 35,
 
-// If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
 
-// Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -203,12 +201,14 @@
     $('.form__container--callback').fadeOut();
   });
 
-  $('.header__menu-button').click(function(){
-    $('.header__menu').slideToggle();
-  });
+	$('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" });
 
-  $('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" });
-    
+  $('.header__menu-button').click(function(){
+		$('.header__navigation').slideToggle();
+    $('.header__menu').slideToggle();
+		$(this).toggleClass('header__menu-button--closed');
+  });
+	 
 });
 	</script>
 </body>
