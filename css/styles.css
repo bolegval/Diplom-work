@@ -277,6 +277,7 @@ ul {
 }
 
 .banner__picture {
+	height: 100%;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -293,7 +294,7 @@ ul {
 
 .banner__image {
 	display: block;
-	height: 430px;
+	max-height: 100%;
 }
 
 #banner__bg {
@@ -707,10 +708,27 @@ ul {
 	
 	.header__menu {
 		display: none;
+		border: 2px solid rgb(0, 0, 0);
+    padding: 30px;
+    font-weight: bold;
+    background-color: #fff;
 	}
 
 	.header__menu-button {
 		display: block;
+	}
+
+	.menu__item--mob {
+		display: list-item;
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+		margin-left: 0;
+		border-bottom: 2px solid #000;
+	}
+
+	.menu__item--mob:last-of-type {
+		border: none;
+		margin-bottom: 0;
 	}
 
 	.banner {
@@ -779,10 +797,6 @@ ul {
 	.elements--active .elements__item-div2 {
     top: 62%;
     left: 90%;
-	}
-
-	.banner__picture {
-		height: auto;
 	}
 
 	.main__services {
