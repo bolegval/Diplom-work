@@ -11,35 +11,35 @@ html {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff');
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-cyrillic_latin-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'),
-    url('../fonts/roboto-v20-cyrillic_latin-italic.woff2') format('woff2'),
-    url('../fonts/roboto-v20-cyrillic_latin-italic.woff') format('woff');
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("../fonts/roboto-v20-cyrillic_latin-italic.woff2") format("woff2"),
+    url("../fonts/roboto-v20-cyrillic_latin-italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'),
-    url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff');
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v20-cyrillic_latin-700.woff") format("woff");
 }
 
 body {
   margin: 0;
   min-width: 320px;
   background-color: white;
-  font: 16px 'Roboto', sans-serif;
+  font: 16px "Roboto", sans-serif;
 }
 
 a {
@@ -85,7 +85,7 @@ ul {
   display: none;
   width: 45px;
   height: 32px;
-  background: url('../icons/menu_button.png') no-repeat;
+  background: url("../icons/menu_button.png") no-repeat;
   border: none;
   outline: none;
   cursor: pointer;
@@ -93,7 +93,7 @@ ul {
 }
 
 .header__menu-button--closed {
-  background: url('../icons/close_icon.svg') no-repeat;
+  background: url("../icons/close_icon.svg") no-repeat;
 }
 
 .menu__item {
@@ -110,7 +110,7 @@ ul {
 }
 
 .menu__link::after {
-  content: '';
+  content: "";
   display: block;
   background-color: #fc557c;
   height: 2px;
@@ -338,19 +338,19 @@ ul {
 }
 
 .service__item--verstka {
-  background: url('../icons/icon-verstka.png') center top/ 80px 74px no-repeat;
+  background: url("../icons/icon-verstka.png") center top/ 80px 74px no-repeat;
 }
 
 .service__item--adaptiv {
-  background: url('../icons/icon-adaptive.png') center top/ 79px 74px no-repeat;
+  background: url("../icons/icon-adaptive.png") center top/ 79px 74px no-repeat;
 }
 
 .service__item--frontend {
-  background: url('../icons/icon-frontend.png') center top/ 74px 74px no-repeat;
+  background: url("../icons/icon-frontend.png") center top/ 74px 74px no-repeat;
 }
 
 .service__item--coding {
-  background: url('../icons/icon-coding.png') center top/ 74px 74px no-repeat;
+  background: url("../icons/icon-coding.png") center top/ 74px 74px no-repeat;
 }
 
 .main__services figcaption {
@@ -396,7 +396,7 @@ ul {
 
 .swiper-slide__desc {
   color: #8993ad;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -409,7 +409,7 @@ ul {
   width: 60px;
   height: 60px;
   top: 44%;
-  background: #fff url('../icons/arrow.png') center no-repeat;
+  background: #fff url("../icons/arrow.png") center no-repeat;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -553,11 +553,11 @@ ul {
 }
 
 .contacts__link--phone {
-  background-image: url('../icons/phone.svg');
+  background-image: url("../icons/phone.svg");
 }
 
 .contacts__link--mail {
-  background-image: url('../icons/mail.svg');
+  background-image: url("../icons/mail.svg");
 }
 
 .footer__form-button {
@@ -583,19 +583,19 @@ ul {
 }
 
 .social__link--vk {
-  background: url('../icons/vk-logo.svg') center no-repeat;
+  background: url("../icons/vk-logo.svg") center no-repeat;
 }
 
 .social__link--facebook {
-  background: url('../icons/facebook-logo.svg') center no-repeat;
+  background: url("../icons/facebook-logo.svg") center no-repeat;
 }
 
 .social__link--twitter {
-  background: url('../icons/twitter-logo.svg') center no-repeat;
+  background: url("../icons/twitter-logo.svg") center no-repeat;
 }
 
 .social__link--instagram {
-  background: url('../icons/instagram-logo.svg') center no-repeat;
+  background: url("../icons/instagram-logo.svg") center no-repeat;
 }
 
 .footer__copyright {
@@ -633,7 +633,7 @@ ul {
   right: 10px;
   top: 10px;
   cursor: pointer;
-  background: url('../icons/cross.svg') center/cover no-repeat;
+  background: url("../icons/cross.svg") center/cover no-repeat;
   border: none;
   outline: none;
 }
@@ -978,7 +978,7 @@ ul {
     height: 33px;
     border-radius: 100%;
     padding: 0;
-    background: url('../icons/call-answer.svg') center no-repeat;
+    background: url("../icons/call-answer.svg") center no-repeat;
     background-size: 17px;
   }
 
@@ -1270,6 +1270,10 @@ ul {
   }
 
   .form__input {
-    width: 200px;
+    width: 190px;
+  }
+
+  .form__submit {
+    width: 190px;
   }
 }
